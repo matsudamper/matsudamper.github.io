@@ -5,6 +5,7 @@
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/css/my.css">
     <script type="text/javascript" src="/js/jquery.min.js"></script>
     <script type="text/javascript" src="/js/bootstrap.min.js"></script>
 
@@ -22,27 +23,16 @@
                 var div = document.getElementById('environment');
                 div.className += " menu_current";
 
-                $('#mainContent').css('display', 'block');
+                $('#main-container').css('display', 'block');
             });
         });
     </script>
-
-    <style type="text/css">
-        #icon{
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-
-        #mainContent{
-            display: none;
-        }
-    </style>
 </head>
 
 <body>
 <div id="header"></div>
 
-<div id="mainContent">
+<div id="main-container" class="container my-container">
     <img id="icon"
          class="img-responsive center-block"
          src="T460s.jpg"

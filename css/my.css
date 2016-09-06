@@ -1,0 +1,36 @@
+body {
+    background-color: #E0E0E0;
+}
+
+#main-container{
+    display: none;
+}
+
+#icon{
+    margin-bottom: 10px;
+}
+
+.my-container{
+    margin-top: 15px;
+    padding: 10px;
+
+    background: #FFFFFF;
+    box-shadow: 0 1px 1px rgba(0,0,0,.5);
+}
+
+/* Menu */
+.menu-container {
+    color: #000000;
+    background-color: #8BC34A;
+    box-shadow: 0 1px 1px rgba(0,0,0,.5);
+}
+.menu_current {
+    color: #000000;
+    background-color: #CDDC39;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.5) inset;
+}
+
+/* Override */
+.table-bordered{
+    margin-bottom: 0px;
+}

@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
 
     <!-- IEでの互換表示無し -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,7 +27,7 @@
 <div id="footer"></div>
 <script type="text/javascript">
     $(function(){
-        $("#header").load("header.html",null,function () {
+        $("#header").load("/header.html",null,function () {
 
             var div = document.getElementById('profile');
             div.className += " menu_current";
@@ -39,7 +39,7 @@
    target="_blank">
     <img id="icon"
          class="img-responsive center-block"
-         src="icon.png"
+         src="/icon.png"
          width="200">
 </a>
 <div class="container">

@@ -14,67 +14,77 @@
     <!-- レスポンシブルデザイン用 -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- ヘッダー -->
+    <script type="text/javascript">
+        $(function(){
+            $("#header").load("/header.html",null,function () {
+
+                var div = document.getElementById('environment');
+                div.className += " menu_current";
+
+                $('#mainContent').css('display', 'block');
+            });
+        });
+    </script>
+
     <style type="text/css">
         #icon{
             margin-top: 10px;
             margin-bottom: 10px;
+        }
+
+        #mainContent{
+            display: none;
         }
     </style>
 </head>
 
 <body>
 <div id="header"></div>
-<script type="text/javascript">
-    $(function(){
-        $("#header").load("/header.html",null,function () {
 
-            var div = document.getElementById('environment');
-            div.className += " menu_current";
-        });
-    });
-</script>
-
-<img id="icon"
-    class="img-responsive center-block"
-    src="T460s.jpg"
-    width="500">
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12">
-            <table class="table table-bordered">
-                <tr>
-                    <th>機種名</th>
-                    <th>Thinkpad T460s</th>
-                </tr>
-                <tr>
-                    <th>OS</th>
-                    <th>Windows10 Home 64bit</th>
-                </tr>
-                <tr>
-                    <th>CPU</th>
-                    <th>Intel Core i5-6200U</th>
-                </tr>
-                <tr>
-                    <th>ROM</th>
-                    <th>256GB</th>
-                </tr>
-                <tr>
-                    <th>RAM</th>
-                    <th>12GB</th>
-                </tr>
-                <tr>
-                    <th>外部モニタ</th>
-                    <th>RDT234WLM</th>
-                </tr>
-                <tr>
-                    <th>コメント</th>
-                    <th>
-                        デスクトップとノートで使い分けていこうと思っていたがノートだけで十分だと感じている。<br>
-                        外部モニターはU2415に変えたい。<br>
-                        VisualStudioやAndroidStudioを使ってアプリケーション制作をしている。
-                    </th>
-                </tr>
-            </table>
+<div id="mainContent">
+    <img id="icon"
+         class="img-responsive center-block"
+         src="T460s.jpg"
+         width="500">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <table class="table table-bordered">
+                    <tr>
+                        <th>機種名</th>
+                        <th>Thinkpad T460s</th>
+                    </tr>
+                    <tr>
+                        <th>OS</th>
+                        <th>Windows10 Home 64bit</th>
+                    </tr>
+                    <tr>
+                        <th>CPU</th>
+                        <th>Intel Core i5-6200U</th>
+                    </tr>
+                    <tr>
+                        <th>ROM</th>
+                        <th>256GB</th>
+                    </tr>
+                    <tr>
+                        <th>RAM</th>
+                        <th>12GB</th>
+                    </tr>
+                    <tr>
+                        <th>外部モニタ</th>
+                        <th>RDT234WLM</th>
+                    </tr>
+                    <tr>
+                        <th>コメント</th>
+                        <th>
+                            デスクトップとノートで使い分けていこうと思っていたがノートだけで十分だと感じている。<br>
+                            外部モニターはU2415に変えたい。<br>
+                            VisualStudioやAndroidStudioを使ってアプリケーション制作をしている。
+                        </th>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
 </div>

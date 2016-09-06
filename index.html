@@ -14,6 +14,17 @@
     <!-- レスポンシブルデザイン用 -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- ヘッダー -->
+    <script type="text/javascript">
+        $(function(){
+            $("#header").load("/header.html",null,function () {
+
+                var div = document.getElementById('profile');
+                div.className += " menu_current";
+            });
+        });
+    </script>
+
     <style type="text/css">
         #icon{
             margin-top: 10px;
@@ -24,15 +35,6 @@
 
 <body>
 <div id="header"></div>
-<script type="text/javascript">
-    $(function(){
-        $("#header").load("/header.html",null,function () {
-
-            var div = document.getElementById('profile');
-            div.className += " menu_current";
-        });
-    });
-</script>
 
 <a href="https://www.amazon.co.jp/%E8%91%89%E6%9C%88%E3%82%AB%E3%83%8E%E3%83%B3%E3%81%AF%E7%94%98%E3%81%8F%E3%81%AA%E3%81%84%E3%80%82-1-4%E3%82%B3%E3%83%9EKINGS%E3%81%B1%E3%82%8C%E3%81%A3%E3%81%A8%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9-%E3%82%B3%E3%83%90%E3%82%B7%E3%82%B3-ebook/dp/B00KGXD76K/ref=sr_1_2?ie=UTF8&qid=1473077230&sr=8-2&keywords=%E8%91%89%E6%9C%88%E3%82%AB%E3%83%8E%E3%83%B3%E3%81%AF%E7%94%98%E3%81%8F%E3%81%AA%E3%81%84"
    target="_blank">

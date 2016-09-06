@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+    <!-- IEでの互換表示無し -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- レスポンシブルデザイン用 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style type="text/css">
+        #icon{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<div id="header"></div>
+<div id="footer"></div>
+<script type="text/javascript">
+    $(function(){
+        $("#header").load("/header.html",null,function () {
+
+            var div = document.getElementById('environment');
+            div.className += " menu_current";
+        });
+    });
+</script>
+
+<img id="icon"
+    class="img-responsive center-block"
+    src="T460s.jpg"
+    width="500">
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <table class="table table-bordered">
+                <tr>
+                    <th>機種名</th>
+                    <th>Thinkpad T460s</th>
+                </tr>
+                <tr>
+                    <th>OS</th>
+                    <th>Windows10 Home 64bit</th>
+                </tr>
+                <tr>
+                    <th>CPU</th>
+                    <th>Intel Core i5-6200U</th>
+                </tr>
+                <tr>
+                    <th>ROM</th>
+                    <th>256GB</th>
+                </tr>
+                <tr>
+                    <th>RAM</th>
+                    <th>12GB</th>
+                </tr>
+                <tr>
+                    <th>外部モニタ</th>
+                    <th>RDT234WLM</th>
+                </tr>
+                <tr>
+                    <th>コメント</th>
+                    <th>
+                        デスクトップとノートで使い分けていこうと思っていたがノートだけで十分だと感じている。<br>
+                        外部モニターはU2415に変えたい。<br>
+                        VisualStudioやAndroidStudioを使ってアプリケーション制作をしている。
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

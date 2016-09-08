@@ -10,8 +10,9 @@ body {
     margin-bottom: 10px;
 }
 
+/* Container */
 .my-container{
-    margin-top: 15px;
+    margin-top: 10px;
     padding: 10px;
 
     background: #FFFFFF;
@@ -24,13 +25,28 @@ body {
     background-color: #8BC34A;
     box-shadow: 0 1px 1px rgba(0,0,0,.5);
 }
-.menu_current {
+.menu-current {
     color: #000000;
     background-color: #CDDC39;
     box-shadow: 1px 1px 1px rgba(0,0,0,.5) inset;
 }
 
-/* Override */
-.table-bordered{
-    margin-bottom: 0px;
+/* SideMenu */
+.side-menu-xs-container{
+    background: #8BC34A;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+
+.side-menu-ms-container{
+    padding: 10px 0px 10px 10px;
+}
+.side-menu-ms-content{
+    padding: 10px;
+
+    background: #8BC34A;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+
+.side-menu-ms-content-container{
+    padding-bottom: 10px;
 }

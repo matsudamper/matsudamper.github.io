@@ -1,6 +1,6 @@
 # LICENSE
-## Bootstrap
+### Bootstrap
 https://github.com/twbs/bootstrap/blob/master/LICENSE
 
-## jQuery
+### jQuery
 https://github.com/jquery/jquery/blob/master/LICENSE.txt

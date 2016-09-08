@@ -18,6 +18,8 @@
 
     <!-- ヘッダー -->
     <script type="text/javascript">
+        var complete = -1;
+
         $.ajax({
             type: "GET",
             url: "/header.html",
@@ -28,6 +30,12 @@
 
                 var work = document.getElementById("work");
                 work.className += " menu-current";
+
+                if(complete == -1){
+                    complete *= -1;
+                }else {
+                    $('#main-container').css('display', 'block');
+                }
             }
         });
 
@@ -47,13 +55,21 @@
                         function(item) {
                             item.innerHTML = ""
                         });
+
+                if(complete == -1){
+                    complete *= -1;
+                }else {
+                    $('#main-container').css('display', 'block');
+                }
             }
         });
     </script>
 </head>
 
 <body>
-<div id="header"></div>
-<div id="content"></div>
+<dvi id="main-container">
+    <div id="header"></div>
+    <div id="content"></div>
+</dvi>
 </body>
 </html>

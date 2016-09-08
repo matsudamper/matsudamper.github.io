@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="/css/my.css">
-
     <script type="text/javascript" src="/js/jquery.min.js"></script>
     <script type="text/javascript" src="/js/bootstrap.min.js"></script>
 
@@ -15,25 +14,10 @@
 
     <!-- レスポンシブルデザイン用 -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- ヘッダー -->
-    <script type="text/javascript">
-        $(function(){
-            $("#header").load("/header.html",null,function () {
-
-                var div = document.getElementById('work');
-                div.className += " menu-current";
-
-                $('#main-container').css('display', 'block');
-            });
-        });
-    </script>
 </head>
 
 <body>
-<div id="header"></div>
-
-<div id="main-container" class="container-fluid">
+<div class="container-fluid">
     <div class="row">
         <div class="col-xs-12
                     side-menu-xs-container

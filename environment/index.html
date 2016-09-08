@@ -17,14 +17,19 @@
 
     <!-- ヘッダー -->
     <script type="text/javascript">
-        $(function(){
-            $("#header").load("/header.html",null,function () {
+        $.ajax({
+            type: "GET",
+            url: "/header.html",
+            dataType: "html",
+            success: function(data) {
+                var split_data = data.split("</head>")[1];
+                $("#header").append($(split_data));
 
-                var div = document.getElementById('environment');
-                div.className += " menu-current";
+                var environment = document.getElementById("environment");
+                environment.className += " menu-current";
 
                 $('#main-container').css('display', 'block');
-            });
+            }
         });
     </script>
 </head>

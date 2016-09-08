@@ -18,23 +18,42 @@
 
     <!-- ヘッダー -->
     <script type="text/javascript">
-        $(function(){
-            $("#content").load("../menu.html",null,function () {
+        $.ajax({
+            type: "GET",
+            url: "/header.html",
+            dataType: "html",
+            success: function(data) {
+                var split_data = data.split("</head>")[1];
+                $("#header").append($(split_data));
 
-                var div = document.getElementById('animation');
-                div.className += " menu-current";
+                var work = document.getElementById("work");
+                work.className += " menu-current";
+            }
+        });
+
+        $.ajax({
+            type: "GET",
+            url: "../menu.html",
+            dataType: "html",
+            success: function(data) {
+                var split_data = data.split("</head>")[1];
+                $("#content").append($(split_data));
+
+                var animation = document.getElementById("animation");
+                animation.className += " menu-current";
 
                 Array.prototype.forEach.call(
                         document.getElementsByClassName("text"),
                         function(item) {
                             item.innerHTML = ""
-                });
-            });
+                        });
+            }
         });
     </script>
 </head>
 
 <body>
+<div id="header"></div>
 <div id="content"></div>
 </body>
 </html>

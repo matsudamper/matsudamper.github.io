@@ -17,14 +17,20 @@
 
     <!-- ヘッダー -->
     <script type="text/javascript">
-        $(function(){
-            $("#header").load("/header.html",null,function () {
+        $.ajax({
+            type: "GET",
+            url: "/header.html",
+            dataType: "html",
+            success: function(data) {
 
-                var div = document.getElementById('profile');
-                div.className += " menu-current";
+                var split_data = data.split("</head>")[1];
+                $("#header").append($(split_data));
+
+                var profile = document.getElementById("profile");
+                profile.className += " menu-current";
 
                 $('#main-container').css('display', 'block');
-            });
+            }
         });
     </script>
 </head>

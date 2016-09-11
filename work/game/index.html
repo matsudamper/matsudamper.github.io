@@ -20,72 +20,48 @@
 
     <!-- ヘッダー -->
     <script type="text/javascript">
-        var complete = -1;
-
-        // ヘッダー取得
-        $.ajax({
-            type: "GET",
-            url: "/header.html",
-            dataType: "html",
-            success: function(data) {
-                var split_data = data.split("</head>")[1];
-                $("#header").append($(split_data));
-
-                // メニュー着色
-                var work = document.getElementById("work");
-                work.className += " menu-current";
-
-                // 表示
-                if(complete == -1){
-                    complete *= -1;
-                }else {
-                    $('#main-container').css('display', 'block');
-                }
-            }
-        });
-
-        // コンテンツ取得
         $.when(
-            $.ajax({
-                type: "GET",
-                url: "../menu.html",
-                dataType: "html",
-                success: function(data) {
-                    var split_data = data.split("</head>")[1];
-                    $("#content").append($(split_data));
+                $.ajax({
+                    type: "GET",
+                    url: "/header.html",
+                    dataType: "html"
+                }),
+                $.ajax({
+                    type: "GET",
+                    url: "../menu.html",
+                    dataType: "html"
+                }),
+                $.ajax({
+                    type: "GET",
+                    url: "text.md",
+                    dataType: "html"
+                })
+        ).done(function (data_head, data_side, data_text) {
 
-                    // メニュー着色
-                    var animation = document.getElementById("game");
-                    animation.className += " menu-current";
-                }
-            }),
+            var head = data_head[0].split("</head>")[1];
+            $("#header").append($(head));
 
-            // テキスト取得
-            $.ajax({
-                type: "GET",
-                url: "text.md",
-                dataType: "html",
-                success: function (md_data) {
-
-                    // テキスト表示
-                    Array.prototype.forEach.call(
-                            document.getElementsByClassName("md"),
-                            function(item) {
-                                item.innerHTML = marked(md_data);
-                            });
-                }
-            })
-        ).done(function () {
+            var side = data_side[0].split("</head>")[1];
+            $("#content").append($(side));
 
 
-            // 表示
-            if(complete == -1){
-                complete *= -1;
-            }else {
-                $('#main-container').css('display', 'block');
-            }
+            // テキスト表示
+            Array.prototype.forEach.call(
+                    document.getElementsByClassName("md"),
+                    function(item) {
+                        item.innerHTML = marked(data_text[0]);
+                    });
+
+            // メニュー着色
+            var work = document.getElementById("work");
+            work.className += " menu-current";
+
+            var animation = document.getElementById("game");
+            animation.className += " menu-current";
+
+
+            $('#main-container').css('display', 'block');
         });
-
     </script>
 
     <script>

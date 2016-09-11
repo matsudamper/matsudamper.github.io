@@ -1,9 +1,0 @@
-Options -Indexes
-
-<Files ~ "\.(htaccess|htpasswd)$">
-deny from all
-</Files>
- 
-RewriteEngine on
-RewriteCond %{THE_REQUEST} ^.*/index.html
-RewriteRule ^(.*)index.html$ https://matsudamper.github.io//$1 [R=301,L]

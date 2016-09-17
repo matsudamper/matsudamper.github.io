@@ -16,7 +16,7 @@ Batman v Superman Dawn of Justice
 
 # ほか
 ♥聲の形  
-♥君の名は。
+♥君の名は。  
 ♥帰ってきたヒトラー  
 GODZILLA  
 シン・ゴジラ  

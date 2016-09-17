@@ -14,7 +14,9 @@ THE FLASH シーズン1
 Batman v Superman Dawn of Justice  
 スーサイドスクワッド  
 
-# 一般
-帰ってきたヒトラー  
+# ほか
+♥聲の形  
+♥君の名は。
+♥帰ってきたヒトラー  
 GODZILLA  
 シン・ゴジラ  

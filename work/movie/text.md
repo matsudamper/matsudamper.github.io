@@ -7,12 +7,13 @@
 ダークナイト  
 ダークナイト・ライジング  
 
+Batman v Superman Dawn of Justice  
+スーサイドスクワッド  
+
 マン・オブ・スティール  
 グリーンランタン  
 THE FLASH シーズン1  
-
-Batman v Superman Dawn of Justice  
-スーサイドスクワッド  
+THE FLASH シーズン2  
 
 # ほか
 ♥聲の形  

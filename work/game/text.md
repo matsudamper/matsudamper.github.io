@@ -10,5 +10,6 @@ GRAVITY DAZE 2
 # MGSシリーズ
 MGS 2  
 MGS 3  
-MGS 5  
 MGS PW  
+MGS V GZ  
+MGS V TPP  

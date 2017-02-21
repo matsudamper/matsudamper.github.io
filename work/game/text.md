@@ -1,5 +1,6 @@
 # アクションゲーム
 GRAVITY DAZE 1  
+GRAVITY DAZE 2  
 バットマン アーカム・ナイト  
 
 # 音ゲー

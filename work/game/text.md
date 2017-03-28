@@ -6,7 +6,7 @@ GRAVITY DAZE 2
 Rez Infinite  
 
 # その他
-サマーレッスン
+サマーレッスン  
 
 # 音
 うた組み575  

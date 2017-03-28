@@ -15,7 +15,11 @@ Batman v Superman Dawn of Justice
 ♥THE FLASH シーズン1  
 ♥THE FLASH シーズン2  
 
+# 怪獣
+GODZILLA  
+キングコング: 髑髏島の巨神  
+シン・ゴジラ  
+
 # ほか
 ♥帰ってきたヒトラー  
-GODZILLA  
-シン・ゴジラ  
+ラ・ラ・ランド  

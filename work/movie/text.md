@@ -16,8 +16,6 @@ Batman v Superman Dawn of Justice
 ♥THE FLASH シーズン2  
 
 # ほか
-♥聲の形  
-♥君の名は。  
 ♥帰ってきたヒトラー  
 GODZILLA  
 シン・ゴジラ  

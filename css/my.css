@@ -2,51 +2,53 @@ body {
     background-color: #E0E0E0;
 }
 
-#main-container{
+#main-container {
     display: none;
 }
 
-#icon{
+#icon {
     margin-bottom: 10px;
 }
 
 /* Container */
-.my-container{
+.my-container {
     margin-top: 10px;
     padding: 10px;
 
     background: #FFFFFF;
-    box-shadow: 0 1px 1px rgba(0,0,0,.5);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .5);
 }
 
 /* Menu */
 .menu-container {
     color: #000000;
     background-color: #8BC34A;
-    box-shadow: 0 1px 1px rgba(0,0,0,.5);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .5);
 }
+
 .menu-current {
     color: #000000;
     background-color: #CDDC39;
-    box-shadow: 1px 1px 1px rgba(0,0,0,.5) inset;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .5) inset;
 }
 
 /* SideMenu */
-.side-menu-xs-container{
+.side-menu-xs-container {
     background: #8BC34A;
-    box-shadow: 1px 1px 1px rgba(0,0,0,.5);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
 }
 
-.side-menu-ms-container{
+.side-menu-ms-container {
     padding: 10px 0px 10px 10px;
 }
-.side-menu-ms-content{
+
+.side-menu-ms-content {
     padding: 10px;
 
     background: #8BC34A;
-    box-shadow: 1px 1px 1px rgba(0,0,0,.5);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
 }
 
-.side-menu-ms-content-container{
+.side-menu-ms-content-container {
     padding-bottom: 10px;
 }

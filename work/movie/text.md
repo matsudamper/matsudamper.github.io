@@ -12,6 +12,7 @@ Batman v Superman Dawn of Justice
 
 マン・オブ・スティール  
 グリーンランタン  
+♥レゴバットマン  
 ♥THE FLASH シーズン1  
 ♥THE FLASH シーズン2  
 

@@ -9,6 +9,7 @@
 
 Batman v Superman Dawn of Justice  
 ★スーサイドスクワッド  
+♥ワンダーウーマン  
 
 マン・オブ・スティール  
 グリーンランタン  

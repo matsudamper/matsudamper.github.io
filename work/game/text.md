@@ -1,9 +1,6 @@
 # 全般
 GRAVITY DAZE 1  
 GRAVITY DAZE 2  
-バットマン アーカム・アサイラム  
-バットマン アーカム・ナイト  
-バットマン アーカムVR  
 Rez Infinite  
 スプラトゥーン2  
 
@@ -22,3 +19,8 @@ MGS 3
 MGS PW  
 MGS V GZ  
 MGS V TPP  
+
+# バットマン
+バットマン アーカム・アサイラム  
+バットマン アーカム・ナイト  
+バットマン アーカムVR  

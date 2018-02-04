@@ -2,7 +2,11 @@
 GRAVITY DAZE 1  
 GRAVITY DAZE 2  
 Rez Infinite  
+
+# 任天堂
 スプラトゥーン2  
+スーパーマリオオデッセイ  
+マリオカート8 デラックス  
 
 # その他
 サマーレッスン  

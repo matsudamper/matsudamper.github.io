@@ -32,14 +32,86 @@
                 $('#main-container').css('display', 'block');
             }
         });
+
+        // Main
+        (function () {
+            // 更新したらここを変更する
+            const newNumber = 2;
+
+            const sharpes = location.href.split("#");
+            let sharpe = sharpes.pop();
+
+            if (isNaN(sharpe) === true) {
+                // 数字以外なら最新を割り当て
+                location.href += "#" + newNumber;
+                sharpe = newNumber;
+            }
+            sharpe = parseInt(sharpe);
+
+            addEventListener("load", function () {
+                let rightButton = document.querySelector(".button--right");
+                let leftButton = document.querySelector(".button--left");
+                rightButton.style.visibility = "hidden";
+                leftButton.style.visibility = "hidden";
+
+
+                const childName = "history" + sharpe;
+
+                // 前へボタン
+                let request = new XMLHttpRequest();
+                request.open('GET', "history" + (sharpe - 1) + "/index.html", true);
+                request.onload = function () {
+                    if (request.status === 200) {
+                        rightButton.style.visibility = "visible";
+                        rightButton.onclick = function () {
+                            location.href = sharpes + "#" + (sharpe - 1);
+                            location.reload();
+                        }
+                    }
+                };
+                request.send(null);
+
+                // 次へボタン
+                let request2 = new XMLHttpRequest();
+                request2.open('GET', "history" + (sharpe + 1) + "/index.html", true);
+                request2.onload = function () {
+                    if (request2.status === 200) {
+                        leftButton.style.visibility = "visible";
+                        leftButton.onclick = function () {
+                            location.href = sharpes + "#" + (sharpe + 1);
+                            location.reload();
+                        }
+                    }
+                };
+                request2.send(null);
+
+
+                // 画像
+                document.querySelector("#icon").src = childName + "/picture.jpg";
+
+
+                // 紹介
+                $.ajax({
+                    type: "GET",
+                    url: "./" + childName + "/index.html",
+                    dataType: "html",
+                    success: function (data) {
+                        var split_data = data.split("</head>")[1];
+                        $("#description").append($(split_data));
+                    }
+                });
+            });
+        }());
+
+
     </script>
 
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
             i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
             a = s.createElement(o),
                 m = s.getElementsByTagName(o)[0];
             a.async = 1;
@@ -56,50 +128,21 @@
 <div id="header"></div>
 
 <div id="main-container" class="container my-container">
+
     <img id="icon"
          class="img-responsive center-block"
-         src="T460s.jpg"
          width="500">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <table class="table table-bordered">
-                    <tr>
-                        <th>機種名</th>
-                        <th>ThinkPad T460s</th>
-                    </tr>
-                    <tr>
-                        <th>OS</th>
-                        <th>Windows10 Home 64bit</th>
-                    </tr>
-                    <tr>
-                        <th>CPU</th>
-                        <th>Intel Core i5-6200U</th>
-                    </tr>
-                    <tr>
-                        <th>ROM</th>
-                        <th>256GB</th>
-                    </tr>
-                    <tr>
-                        <th>RAM</th>
-                        <th>12GB</th>
-                    </tr>
-                    <tr>
-                        <th>外部モニタ</th>
-                        <th>27UD68</th>
-                    </tr>
-                    <tr>
-                        <th>コメント</th>
-                        <th>
-                            デスクトップとノートで使い分けていこうと思っていたがノートだけで十分だと感じている。<br>
-                            ゲーム開発とかもしたいが流石にデスクトップでやりたい。<br>
-                            4Kモニタで作業効率が上がった。
-                        </th>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
+
+    <div id="description"></div>
+</div>
+
+<div class="left-right-button container">
+    <a class="button--left" onclick="next()">
+        <div class="button">次へ</div>
+    </a>
+    <a class="button--right" onclick="previous()">
+        <div class="button">前へ</div>
+    </a>
 </div>
 </body>
 </html>

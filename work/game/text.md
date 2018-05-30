@@ -1,4 +1,5 @@
 # 全般
+スクールガールストライカーズ  
 GRAVITY DAZE 1  
 GRAVITY DAZE 2  
 Rez Infinite  

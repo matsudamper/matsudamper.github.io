@@ -50,14 +50,66 @@
 <body class="hidden">
 <div id="header"></div>
 
-<div id="main-container" class="container my-container">
-    <a href="https://www.amazon.co.jp/%E8%91%89%E6%9C%88%E3%82%AB%E3%83%8E%E3%83%B3%E3%81%AF%E7%94%98%E3%81%8F%E3%81%AA%E3%81%84%E3%80%82-1-4%E3%82%B3%E3%83%9EKINGS%E3%81%B1%E3%82%8C%E3%81%A3%E3%81%A8%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9-%E3%82%B3%E3%83%90%E3%82%B7%E3%82%B3-ebook/dp/B00KGXD76K/ref=sr_1_2?ie=UTF8&qid=1473077230&sr=8-2&keywords=%E8%91%89%E6%9C%88%E3%82%AB%E3%83%8E%E3%83%B3%E3%81%AF%E7%94%98%E3%81%8F%E3%81%AA%E3%81%84"
-       target="_blank">
-        <img id="icon"
-             class="img-responsive center-block"
-             src="/icon.png"
-             width="200">
-    </a>
+<main class="container my-container">
+    <div class="flex-row-center">
+        <div class="icon-selector" style="height: 200px;" onclick="iconIndex.plus()"></div>
+
+        <a id="icon_url"
+           target="_blank">
+            <img id="icon"
+                 class="img-responsive center-block"
+                 width="200">
+        </a>
+
+        <div class="icon-selector" style="height: 200px;" onclick="iconIndex.minus()"></div>
+
+        <script>
+            let iconIndex = (function () {
+                var iconList = [
+                    {
+                        name: "1", url: "https://www.amazon.co.jp/%E6%9C%AA%E7%A2%BA%E8%AA%8D%E3%81%A7%E9%80%B2%E8%A1%8C%E5%BD%A2-4-4%E3%82%B3%E3%83%9EKINGS%E3%81%B1%E3%82%8C%E3%81%A3%E3%81%A8%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9-%E8%8D%92%E4%BA%95-%E3%83%81%E3%82%A7%E3%83%AA%E3%83%BC-ebook/dp/B00I4S61V2/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr="
+                    },
+                    {
+                        name: "2", url: "https://www.amazon.co.jp/%E6%9C%AA%E7%A2%BA%E8%AA%8D%E3%81%A7%E9%80%B2%E8%A1%8C%E5%BD%A2-4-4%E3%82%B3%E3%83%9EKINGS%E3%81%B1%E3%82%8C%E3%81%A3%E3%81%A8%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9-%E8%8D%92%E4%BA%95-%E3%83%81%E3%82%A7%E3%83%AA%E3%83%BC-ebook/dp/B00I4S61V2/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr="
+                    },
+                    {
+                        name: "3",
+                        url: "https://www.amazon.co.jp/%E8%91%89%E6%9C%88%E3%82%AB%E3%83%8E%E3%83%B3%E3%81%AF%E7%94%98%E3%81%8F%E3%81%AA%E3%81%84%E3%80%82-1-4%E3%82%B3%E3%83%9EKINGS%E3%81%B1%E3%82%8C%E3%81%A3%E3%81%A8%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9-%E3%82%B3%E3%83%90%E3%82%B7%E3%82%B3-ebook/dp/B00KGXD76K/ref=sr_1_2?ie=UTF8&qid=1473077230&sr=8-2&keywords=%E8%91%89%E6%9C%88%E3%82%AB%E3%83%8E%E3%83%B3%E3%81%AF%E7%94%98%E3%81%8F%E3%81%AA%E3%81%84"
+                    },
+                ];
+
+                var index = iconList.length - 1;
+
+                function changeIcon(value) {
+                    let item = iconList[value];
+
+                    document.querySelector("#icon").setAttribute("src", "/icon/" + item.name + ".png");
+                    if (item.url != null) {
+                        document.querySelector("#icon_url").setAttribute("href", item.url);
+                    } else {
+                        document.querySelector("#icon_url").removeAttribute("href");
+                    }
+                }
+
+                changeIcon(index);
+
+                return {
+                    minus() {
+                        if (index > 0) {
+                            index--;
+                            changeIcon(index);
+                        }
+                    },
+                    plus() {
+                        if (index < iconList.length - 1) {
+                            index++;
+                            changeIcon(index);
+                        }
+                    }
+                }
+            })();
+        </script>
+    </div>
 
     <table class="table table-bordered">
         <tr>
@@ -114,6 +166,6 @@
             </th>
         </tr>
     </table>
-</div>
+</main>
 </body>
 </html>

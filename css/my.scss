@@ -11,12 +11,22 @@ body {
   box-shadow: 0 1px 1px rgba(0, 0, 0, .5);
 }
 
-/* Container */
+//
 .hidden {
   display: none;
 }
 
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* Container */
 .my-container {
+  display: flex;
+  flex-direction: column;
+
   margin-top: 10px;
   padding: 10px;
 
@@ -84,4 +94,10 @@ body {
 
 .button {
   padding: 0.5em 0.5em 0.5em 1em;
+}
+
+//
+.icon-selector {
+  display: block;
+  flex-grow: 1;
 }

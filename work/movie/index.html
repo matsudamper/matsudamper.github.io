@@ -61,7 +61,7 @@
             animation.className += " menu-current";
 
 
-            $('#main-container').css('display', 'block');
+            document.body.classList.remove("hidden");
         });
     </script>
 
@@ -83,11 +83,11 @@
     </script>
 </head>
 
-<body>
-<dvi id="main-container">
+<body class="hidden">
+<main>
     <div id="header"></div>
 
     <div id="content"></div>
-</dvi>
+</main>
 </body>
 </html>

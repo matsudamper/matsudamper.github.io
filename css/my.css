@@ -1,13 +1,13 @@
 body {
   background-color: #E0E0E0; }
 
-#main-container {
-  display: none; }
-
 #icon {
   margin-bottom: 10px; }
 
 /* Container */
+.hidden {
+  display: none; }
+
 .my-container {
   margin-top: 10px;
   padding: 10px;

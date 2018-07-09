@@ -20,6 +20,7 @@ Batman v Superman Dawn of Justice
 マン・オブ・スティール  
 グリーンランタン  
 ♥レゴバットマン  
+ニンジャバットマン  
 
 ## MARVEL
 ♥スパイダーマン ホームカミング

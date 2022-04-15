@@ -1,0 +1,9 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "me.retty",
+      "sha256_cert_fingerprints":
+      ["D8:5F:C1:F2:6E:F8:5C:85:09:E7:FB:9E:D7:C7:9F:81:3A:22:36:9B:A9:DE:27:82:87:00:BC:F5:65:97:5D:F6"]
+    }
+}]

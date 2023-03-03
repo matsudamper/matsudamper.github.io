@@ -1,27 +1,2 @@
 [
-    {
-        "relation": [
-            "delegate_permission/common.handle_all_urls"
-        ],
-        "target": {
-            "namespace": "android_app",
-            "package_name": "me.retty",
-            "sha256_cert_fingerprints": [
-                "D8:5F:C1:F2:6E:F8:5C:85:09:E7:FB:9E:D7:C7:9F:81:3A:22:36:9B:A9:DE:27:82:87:00:BC:F5:65:97:5D:F6",
-                "03:63:F8:49:2A:9B:E0:D6:8C:4B:2E:D8:60:C9:8F:D1:C0:A8:E9:82:C1:44:F7:51:80:D6:83:63:7F:B1:0A:89"
-            ]
-        }
-    },
-    {
-        "relation": [
-            "delegate_permission/common.handle_all_urls"
-        ],
-        "target": {
-            "namespace": "android_app",
-            "package_name": "me.retty.debug",
-            "sha256_cert_fingerprints": [
-                "03:63:F8:49:2A:9B:E0:D6:8C:4B:2E:D8:60:C9:8F:D1:C0:A8:E9:82:C1:44:F7:51:80:D6:83:63:7F:B1:0A:89"
-            ]
-        }
-    }
 ]

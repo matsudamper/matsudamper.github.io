@@ -7,6 +7,7 @@
 Batman v Superman Dawn of Justice  
 ★スーサイドスクワッド  
 ♥ワンダーウーマン  
+♥THE FLASH  
 
 ### ARROWバース
 ♥THE FLASH シーズン1  
@@ -21,6 +22,7 @@ Batman v Superman Dawn of Justice
 グリーンランタン  
 ♥レゴバットマン  
 ニンジャバットマン  
+★THE BATMAN  
 
 ## MARVEL
 ♥スパイダーマン ホームカミング
@@ -34,4 +36,5 @@ GODZILLA
 ♥帰ってきたヒトラー  
 ラ・ラ・ランド  
 パワーレンジャー  
+♥WICKED  
 二度目の夏、二度と会えない君  

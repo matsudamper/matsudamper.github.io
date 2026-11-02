@@ -8,6 +8,7 @@ Batman v Superman Dawn of Justice
 ★スーサイドスクワッド  
 ♥ワンダーウーマン  
 ♥THE FLASH  
+クレイフェイス
 
 ### ARROWバース
 ♥THE FLASH シーズン1  
@@ -38,3 +39,4 @@ GODZILLA
 パワーレンジャー  
 ♥WICKED  
 二度目の夏、二度と会えない君  
+DIGGER

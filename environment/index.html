@@ -36,7 +36,7 @@
         // Main
         (function () {
             // 更新したらここを変更する
-            const newNumber = 3;
+            const newNumber = 4;
 
             const sharpes = location.href.split("#");
             let sharpe = sharpes.pop();
@@ -87,7 +87,13 @@
 
 
                 // 画像
-                document.querySelector("#icon").src = childName + "/picture.webp";
+                const icon = document.querySelector("#icon");
+                const imageFallback = document.querySelector("#image-fallback");
+                icon.onerror = function () {
+                    icon.style.display = "none";
+                    imageFallback.style.display = "block";
+                };
+                icon.src = childName + "/picture.webp";
 
 
                 // 紹介
@@ -126,7 +132,9 @@
 
         <img id="icon"
              class="img-responsive center-block"
-             width="500">
+             width="500"
+             alt="No Image">
+        <div id="image-fallback" class="text-center" style="display: none;">No Image</div>
 
         <div id="description"></div>
     </div>

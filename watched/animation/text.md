@@ -22,10 +22,27 @@ BanG Dream! Ave Mujica prima aurora
 チェンソーマン  
 チェンソーマンレゼ篇  
 
+# 2024年
+鬼太郎誕生 ゲゲゲの謎  
+千年女優  
+★デッドデッドデーモンズデデデデデストラクション 前章  
+デッドデッドデーモンズデデデデデストラクション 後章  
+♥ルックバック  
+きみの色  
+
 # 2023年
 ♥アリスとテレスのまぼろし工場  
 
+# 2023年
+すずめの戸締まり  
+
+# 2020年
+劇場版 SHIROBAKO  
+
 # 2019年
+PSYCHO-PASS Sinners of the System Case.2  
+PSYCHO-PASS Sinners of the System Case.3  
+
 ## 2019年 冬
 ♥ケムリクサ  
 

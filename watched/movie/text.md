@@ -8,7 +8,11 @@ Batman v Superman Dawn of Justice
 ★スーサイドスクワッド  
 ♥ワンダーウーマン  
 ♥THE FLASH  
-クレイフェイス
+
+## DCU
+スーマーマン  
+スーパーガール  
+クレイフェイス  
 
 ### ARROWバース
 ♥THE FLASH シーズン1  

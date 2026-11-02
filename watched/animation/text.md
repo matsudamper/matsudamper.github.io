@@ -56,6 +56,7 @@ PSYCHO-PASS Sinners of the System Case.3
 ## 2018年 劇場
 ♥中二病でも恋がしたい！ -Take On Me-  
 ♥さよならの朝に約束の花をかざろう  
+GODZILLA 決戦機動増殖都市  
 
 ## 2018年 その他
 ★RWBY Volume 5  
@@ -95,7 +96,8 @@ One Room
 ★打ち上げ花火、下から見るか？横から見るか？  
 君の声を届けたい  
 RWBY VOLUME 4  
-DCスーパーヒーローズvs鷹の爪団
+DCスーパーヒーローズvs鷹の爪団  
+GODZILLA 怪獣惑星
 
 ## 2017年 その他
 ★俺の妹がこんなに可愛いわけがない GOOD END  

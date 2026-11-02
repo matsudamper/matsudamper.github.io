@@ -57,5 +57,6 @@ GODZILLA
 ラ・ラ・ランド  
 パワーレンジャー  
 ♥WICKED  
+★WICKED For Good  
 プロジェクト・ヘイル・メアリー  
 DIGGER  

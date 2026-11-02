@@ -5,6 +5,7 @@
 ## DC
 ### DCEU
 Batman v Superman Dawn of Justice  
+ジャスティスリーグ
 ★スーサイドスクワッド  
 ♥ワンダーウーマン  
 アクアマン  

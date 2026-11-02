@@ -12,7 +12,7 @@
 ♥超かぐや姫！  
 　チネチッタ LIVE ZOUND ver.1.6.8  
 　立川シネマシティ 極音02  
-　立川シネマシティ イベント版/極音02  
+　立川シネマシティ 応援上映/極音02  
 　イオンシネマ津田沼South ATMOS  
 　グランドシネマサンシャイン池袋 ULTRA 4DX  
 　T・ジョイ蘇我 SCREENX with DolbyAtmos  
